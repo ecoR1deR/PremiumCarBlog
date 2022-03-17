@@ -28,9 +28,97 @@
 body {
   font-family: "PT Sans";
   font-weight: 400;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.page-header__container {
+  height: 90px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+.page-header__logo-text {
+  padding: 2px 6px;
+  margin-left: 6px;
+  position: absolute;
+  background: #4A90E2;
+  border-radius: 3px;
+}
+
+.page-header__menu {
+}
+
+.menu__list {
+  font-size: 14px;
+  line-height: 18px;
+  width: 368px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.search {
+  width: auto;
+  float: right;
   
+}
+
+.search__input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+
+.search__input:focus {
+  width: 300px;
+}
+.search__button {
+  width: 42px;
+  height: 42px;
+  
+  border: none;
+  
+  top: -2px;
+  right: 0;
+}
+
+.search__button::before {
+  content: "\f002";
+  color: #324b4e;
+}
+
 .main-container {
-  max-width: 500px;
-  margin: auto;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 50px;
 }
