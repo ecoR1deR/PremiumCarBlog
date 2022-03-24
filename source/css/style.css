@@ -1,3 +1,14 @@
+/*--------Переменные--------*/
+:root {
+  --main-header-color:#000000;
+  --logo-header-color:#FFFFFF;
+  --logo-text-color:#4A90E2;
+  --primary-button-color:#4A90E2;
+  --max-content-size:1170px;
+}
+
+
+
 @font-face {
   font-family: "PT Sans";
   src: url(/fonts/PTSans-Regular.woff2),
@@ -26,7 +37,7 @@
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -34,11 +45,11 @@ body {
 
 .page-header {
   width: 100%;
-  background-color: black;
+  background-color: var(--main-header-color);
 }
 
 .page-header__container {
-  max-width: 1170px;
+  max-width: var(--max-content-size);
   height: 90px;
   margin: 0 auto;
   display: flex;
@@ -51,14 +62,14 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  color: #fff;
+  color: var(--logo-header-color);
 }
 
 .page-header__logo-text {
   padding: 2px 6px;
   margin-left: 6px;
   position: absolute;
-  background: #4A90E2;
+  background-color: var(--logo-text-color);
   border-radius: 3px;
 }
 
@@ -116,7 +127,7 @@ list-style: none;
 }
 
 .main-container {
-  max-width: 1170px;
+  max-width: var(--max-content-size);
   margin: 0 auto;
   padding: 50px;
 }
