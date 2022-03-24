@@ -33,13 +33,14 @@ body {
 }
 
 .page-header {
-  max-width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  background-color: black;
 }
 
 .page-header__container {
+  max-width: 1170px;
   height: 90px;
-  background-color: black;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -52,15 +53,13 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
 .page-header__logo-text {
   padding: 2px 6px;
   margin-left: 6px;
   position: absolute;
   background: #4A90E2;
   border-radius: 3px;
-}
-
-.page-header__menu {
 }
 
 .menu__list {
@@ -82,18 +81,21 @@ list-style: none;
 }
 
 .search {
-  width: auto;
-  float: right;
-  
+  position: relative;
+}
+
+.search::after {
+  content:""; clear:both; display:table
 }
 
 .search__input {
   width: 250px;
   height: 42px;
   padding-left: 15px;
+  padding-right: 30px;
   border-radius: 42px;
   border: 2px solid #324b4e;
-  background: #F9F0DA;
+  background: white;
   outline: none;
   position: relative;
   transition: .3s linear;
@@ -101,20 +103,16 @@ list-style: none;
 
 .search__input:focus {
   width: 300px;
-}
-.search__button {
-  width: 42px;
-  height: 42px;
-  
-  border: none;
-  
-  top: -2px;
-  right: 0;
+  padding-right: 30px;
 }
 
-.search__button::before {
-  content: "\f002";
-  color: #324b4e;
+.search__button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  cursor: pointer;
 }
 
 .main-container {
