@@ -1,10 +1,8 @@
-/*--------Переменные--------*/
 :root {
-  --main-header-color:#000000;
-  --logo-header-color:#FFFFFF;
-  --logo-text-color:#4A90E2;
-  --primary-button-color:#4A90E2;
-  --max-content-size:1170px;
+  --color-black:#000000;
+  --color-white:#FFFFFF;
+  --color-accent:#4A90E2;
+  --max-content-width:1170px;
 }
 
 
@@ -45,11 +43,11 @@ body {
 
 .page-header {
   width: 100%;
-  background-color: var(--main-header-color);
+  background-color: var(--color-black);
 }
 
 .page-header__container {
-  max-width: var(--max-content-size);
+  max-width: var(--max-content-width);
   height: 90px;
   margin: 0 auto;
   display: flex;
@@ -62,14 +60,14 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  color: var(--logo-header-color);
+  color: var(--color-white);
 }
 
 .page-header__logo-text {
   padding: 2px 6px;
   margin-left: 6px;
   position: absolute;
-  background-color: var(--logo-text-color);
+  background-color: var(--color-accent);
   border-radius: 3px;
 }
 
@@ -93,10 +91,6 @@ list-style: none;
 
 .search {
   position: relative;
-}
-
-.search::after {
-  content:""; clear:both; display:table
 }
 
 .search__input {
@@ -127,7 +121,7 @@ list-style: none;
 }
 
 .main-container {
-  max-width: var(--max-content-size);
+  max-width: var(--max-content-width);
   margin: 0 auto;
   padding: 50px;
 }
