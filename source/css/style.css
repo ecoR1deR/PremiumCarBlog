@@ -10,7 +10,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url(/fonts/PTSans-Regular.woff2),
-  url(/fonts/PTSans-Regular.woff);
+    url(/fonts/PTSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url(/fonts/PTSans-Italic.woff2),
-  url(/fonts/PTSans-Italic.woff);
+    url(/fonts/PTSans-Italic.woff);
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url(/fonts/PTSans-Bold.woff2),
-  url(/fonts/PTSans-Bold.woff);
+    url(/fonts/PTSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -80,7 +80,7 @@ body {
 }
 
 .menu__item {
-list-style: none;
+  list-style: none;
 }
 
 .menu__link {
@@ -134,33 +134,12 @@ list-style: none;
   padding: 0;
 }
 
-.populars-grid__item-1 {
-  position: relative;
-  grid-row: 1 / span 2;
-  align-self: start;
+.populars-grid li:nth-child(5n+1) {
+  grid-row: span 2;
 }
 
-.populars-grid__item-2 {
+.populars-grid li:nth-child(n) {
   position: relative;
-  align-self: start;
-}
-
-.populars-grid__item-3 {
-  position: relative;
-  align-self: start;
-}
-
-.populars-grid__item-4 {
-  position: relative;
-  grid-column: 2;
-  align-self: start;
-  
-}
-
-.populars-grid__item-5 {
-  position: relative;
-  align-self: start;
-  
 }
 
 .car-preview__title {
@@ -174,24 +153,34 @@ list-style: none;
   line-height: 30px;
 }
 
-.car-preview__link{
+.car-preview__title--big {
+  font-size: 26px;
+  line-height: 36px;
+  width: 315px;
+}
+
+.car-preview__link {
   position: absolute;
   top: 30px;
   left: 21px;
   text-decoration: none;
   font-size: 12px;
- line-height: 16px;
+  line-height: 16px;
   color: var(--logo-header-color);
   background-color: var(--primary-button-color);
   padding: 4px 12px;
 }
 
-.car-preview__meta{
+.car-preview__meta {
   position: absolute;
   left: 21px;
-  bottom: 78px;
+  bottom: 80px;
   font-size: 14px;
   line-height: 18px;
   color: var(--logo-header-color);
   opacity: 0.8;
+}
+
+.car-preview__meta--big {
+  bottom: 90px;
 }
