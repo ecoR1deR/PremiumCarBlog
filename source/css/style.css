@@ -56,14 +56,14 @@ body {
   align-items: center;
 }
 
-.page-header__logo {
+.logo {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   color: var(--color-white);
 }
 
-.page-header__logo-text {
+.logo__text {
   padding: 2px 6px;
   margin-left: 6px;
   position: absolute;
