@@ -122,9 +122,8 @@ body {
 .main-container {
   max-width: var(--max-content-width);
   margin: 0 auto;
-  padding: 50px;
+  padding-top: 30px;
 }
-
 
 .populars-grid {
   list-style: none;
@@ -147,7 +146,7 @@ body {
   left: 21px;
   bottom: 0;
   width: 250px;
-  color: var(--logo-header-color);
+  color: var(--color-white);
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -166,8 +165,8 @@ body {
   text-decoration: none;
   font-size: 12px;
   line-height: 16px;
-  color: var(--logo-header-color);
-  background-color: var(--primary-button-color);
+  color: var(--color-white);
+  background-color: var(--color-accent);
   padding: 4px 12px;
 }
 
@@ -177,7 +176,7 @@ body {
   bottom: 80px;
   font-size: 14px;
   line-height: 18px;
-  color: var(--logo-header-color);
+  color: var(--color-white);
   opacity: 0.8;
 }
 
