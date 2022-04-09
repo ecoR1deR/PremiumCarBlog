@@ -1,4 +1,126 @@
+:root {
+  --color-black:#000000;
+  --color-white:#FFFFFF;
+  --color-accent:#4A90E2;
+  --max-content-width:1170px;
+}
+
+
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(/fonts/PTSans-Regular.woff2),
+  url(/fonts/PTSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(/fonts/PTSans-Italic.woff2),
+  url(/fonts/PTSans-Italic.woff);
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(/fonts/PTSans-Bold.woff2),
+  url(/fonts/PTSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  width: 100%;
+  background-color: var(--color-black);
+}
+
+.page-header__container {
+  max-width: var(--max-content-width);
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.logo__text {
+  padding: 2px 6px;
+  margin-left: 2px;
+  background-color: var(--color-accent);
+  border-radius: 3px;
+}
+
+.menu__list {
+  font-size: 14px;
+  line-height: 18px;
+  width: 368px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.search {
+  position: relative;
+}
+
+.search__input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  padding-right: 30px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: white;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+
+.search__input:focus {
+  width: 300px;
+  padding-right: 30px;
+}
+
+.search__button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  cursor: pointer;
+}
+
 .main-container {
-  max-width: 500px;
-  margin: auto;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 50px;
 }
